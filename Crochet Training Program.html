@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The RoyalBee Vogue – Crochet Mastery Training 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #D4A017;
+    --gold-light: #F0C842;
+    --gold-pale: #f5e199;
+    --black: #000000;
+    --dark: #050505;
+    --mid: #0d0d0d;
+    --card: #121212;
+    --border: rgba(212,160,23,0.25);
+    --white: #ffffff;
+    --off-white: #f0ece3;
+    --text-muted: rgba(255,255,255,0.6);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 80px 24px 100px;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 65%, rgba(212,160,23,0.13) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 30% at 15% 25%, rgba(212,160,23,0.07) 0%, transparent 60%);
+  }
+
+  .honeycomb-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V17L28 0l28 17v33zm0 34L0 83V72l28 17 28-17v11z' fill='none' stroke='%23D4A017' stroke-width='1'/%3E%3C/svg%3E");
+    background-size: 56px 100px;
+  }
+
+  /* LOGO */
+  .logo-wrap {
+    margin-bottom: 44px;
+    animation: fadeDown 1s ease both;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .logo-img {
+    height: 78px;
+    width: auto;
+    display: block;
+    mix-blend-mode: screen;
+    filter: brightness(1.05);
+  }
+
+  .logo-wordmark {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.15;
+  }
+
+  .logo-wordmark .wm-top {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+    color: var(--white);
+  }
+
+  .logo-wordmark .wm-bottom {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 0.72rem;
+    letter-spacing: 0.45em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+
+  /* BADGE */
+  .badge {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    padding: 6px 20px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    animation: fadeDown 1s 0.2s ease both;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 7vw, 5.5rem);
+    line-height: 1.08;
+    text-align: center;
+    max-width: 820px;
+    animation: fadeDown 1s 0.35s ease both;
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-sub {
+    margin-top: 22px;
+    font-size: 0.85rem;
+    letter-spacing: 0.22em;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    text-transform: uppercase;
+    animation: fadeDown 1s 0.5s ease both;
+    position: relative;
+    z-index: 2;
+  }
+
+  .date-strip {
+    margin-top: 44px;
+    display: flex;
+    gap: 0;
+    animation: fadeDown 1s 0.65s ease both;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .date-item {
+    padding: 18px 36px;
+    border: 1px solid var(--border);
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .date-item + .date-item { border-left: none; }
+
+  .date-item .d-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.28em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  .date-item .d-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--white);
+  }
+
+  .cta-group {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    animation: fadeDown 1s 0.8s ease both;
+    position: relative;
+    z-index: 2;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    border: none;
+    padding: 20px 56px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+  }
+
+  .cta-note {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.38);
+    font-family: 'Lato', sans-serif;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    color: rgba(255,255,255,0.28);
+    animation: bounce 2s 2s infinite;
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: #080808;
+    padding: 56px 24px;
+    border-top: 1px solid rgba(212,160,23,0.2);
+    border-bottom: 1px solid rgba(212,160,23,0.2);
+  }
+
+  .trust-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .trust-item {
+    text-align: center;
+    padding: 28px 20px;
+    border-right: 1px solid rgba(212,160,23,0.15);
+  }
+
+  .trust-item:last-child { border-right: none; }
+
+  .trust-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .trust-label {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 100px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.38em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .section h2 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    line-height: 1.18;
+    max-width: 600px;
+    color: var(--white);
+  }
+
+  .section h2 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212,160,23,0.35), transparent);
+  }
+
+  /* ── ABOUT ── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 56px;
+  }
+
+  .about-body p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: rgba(255,255,255,0.72);
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .about-body p strong {
+    color: var(--gold-light);
+    font-weight: 700;
+  }
+
+  .features-list {
+    list-style: none;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .features-list li {
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.78);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .features-list li::before {
+    content: '◆';
+    color: var(--gold);
+    font-size: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .about-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hex-ring {
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(212,160,23,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hex-ring::before {
+    content: '';
+    position: absolute;
+    inset: 22px;
+    border: 1px solid rgba(212,160,23,0.1);
+    border-radius: 50%;
+  }
+
+  .hex-center { text-align: center; }
+  .hex-icon { font-size: 3rem; line-height: 1; margin-bottom: 10px; }
+  .hex-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold-light);
+  }
+  .hex-sub {
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+    color: rgba(255,255,255,0.35);
+    margin-top: 5px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .orbit-dot {
+    position: absolute;
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: orbit 9s linear infinite;
+  }
+  .orbit-dot:nth-child(2) { animation-delay: -3s; background: var(--gold-pale); }
+  .orbit-dot:nth-child(3) { animation-delay: -6s; }
+
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(140px); }
+    to   { transform: rotate(360deg) translateX(140px); }
+  }
+
+  /* ── CURRICULUM ── */
+  .curriculum {
+    padding: 100px 24px;
+    background: #060606;
+  }
+
+  .curriculum-inner { max-width: 1100px; margin: 0 auto; }
+
+  .curriculum-inner p.intro {
+    margin-top: 18px;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.55);
+    max-width: 540px;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .modules-grid {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1px;
+    background: rgba(212,160,23,0.08);
+  }
+
+  .module-card {
+    background: #060606;
+    padding: 36px 30px;
+    position: relative;
+    transition: background 0.3s;
+  }
+
+  .module-card:hover { background: #0f0f0f; }
+
+  .module-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(212,160,23,0.1);
+    line-height: 1;
+    position: absolute;
+    top: 18px; right: 22px;
+  }
+
+  .module-icon { font-size: 1.6rem; margin-bottom: 16px; }
+
+  .module-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--white);
+  }
+
+  .module-desc {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.52);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .capstone-card {
+    margin-top: 1px;
+    background: linear-gradient(135deg, rgba(212,160,23,0.1), rgba(212,160,23,0.03));
+    border: 1px solid rgba(212,160,23,0.35);
+    padding: 48px 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .capstone-icon { font-size: 3rem; flex-shrink: 0; }
+
+  .capstone-body .cap-tag {
+    font-size: 0.62rem;
+    letter-spacing: 0.32em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  .capstone-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--white);
+  }
+
+  .capstone-body p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.62);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  /* ── BRAND BUILDING ── */
+  .brand-section {
+    padding: 100px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .brand-section p.intro {
+    margin-top: 18px;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.55);
+    max-width: 520px;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .brand-grid {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .brand-card {
+    border: 1px solid rgba(212,160,23,0.18);
+    padding: 36px 28px;
+    background: #050505;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .brand-card:hover {
+    border-color: rgba(212,160,23,0.5);
+    transform: translateY(-4px);
+  }
+
+  .brand-card .b-icon { font-size: 2rem; margin-bottom: 16px; }
+  .brand-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--white);
+  }
+  .brand-card p {
+    font-size: 0.9rem;
+    line-height: 1.78;
+    color: rgba(255,255,255,0.52);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  /* ── EBOOK ── */
+  .ebook-strip {
+    background: #080808;
+    padding: 80px 24px;
+    border-top: 1px solid rgba(212,160,23,0.12);
+    border-bottom: 1px solid rgba(212,160,23,0.12);
+  }
+
+  .ebook-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .ebook-visual {
+    flex-shrink: 0;
+    width: 160px;
+    height: 215px;
+    background: linear-gradient(135deg, #1a1500, #201b00);
+    border: 1px solid rgba(212,160,23,0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 10px 10px 0 rgba(212,160,23,0.07), 20px 20px 0 rgba(212,160,23,0.03);
+  }
+
+  .ebook-visual .e-icon { font-size: 2.5rem; }
+  .ebook-visual .e-tag {
+    font-size: 0.52rem;
+    letter-spacing: 0.28em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+  .ebook-visual .e-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.88rem;
+    text-align: center;
+    padding: 0 14px;
+    line-height: 1.35;
+    color: var(--white);
+  }
+
+  .ebook-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--white);
+  }
+
+  .ebook-body p {
+    font-size: 1rem;
+    line-height: 1.88;
+    color: rgba(255,255,255,0.65);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  /* ── ONLINE ── */
+  .online-section {
+    padding: 100px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .online-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 55% 55% at 50% 50%, rgba(212,160,23,0.08), transparent 70%);
+  }
+
+  .online-section .section-label { justify-content: center; }
+
+  .online-section h2 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+  }
+
+  .online-section h2 em { font-style: italic; color: var(--gold-light); }
+
+  .globe-ring {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed rgba(212,160,23,0.22);
+    border-radius: 50%;
+    margin: 48px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: spin 32s linear infinite;
+  }
+
+  .globe-inner {
+    animation: spin 32s linear reverse infinite;
+    text-align: center;
+  }
+
+  .globe-emoji { font-size: 3.2rem; }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  .ping {
+    position: absolute;
+    width: 10px; height: 10px;
+    background: var(--gold);
+    border-radius: 50%;
+  }
+  .ping::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    animation: ping 1.6s ease-out infinite;
+    opacity: 0;
+  }
+  @keyframes ping { from { transform: scale(1); opacity: 0.6; } to { transform: scale(2.5); opacity: 0; } }
+
+  .online-points {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 32px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+  }
+
+  .online-points li {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.72);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .online-points li .dot {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── REVIEWS ── */
+  .reviews-section {
+    padding: 100px 24px;
+    background: #060606;
+    border-top: 1px solid rgba(212,160,23,0.12);
+    border-bottom: 1px solid rgba(212,160,23,0.12);
+  }
+
+  .reviews-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .reviews-grid {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .review-card {
+    background: #0a0a0a;
+    border: 1px solid rgba(212,160,23,0.18);
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .review-card:hover {
+    border-color: rgba(212,160,23,0.45);
+    transform: translateY(-4px);
+  }
+
+  .review-quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    line-height: 0.6;
+    color: rgba(212,160,23,0.2);
+    font-weight: 700;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+  }
+
+  .review-stars {
+    color: var(--gold);
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-top: 24px;
+  }
+
+  .review-text {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: rgba(255,255,255,0.75);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    flex: 1;
+  }
+
+  .review-footer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(212,160,23,0.12);
+    margin-top: auto;
+  }
+
+  .review-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(212,160,23,0.35), rgba(212,160,23,0.1));
+    border: 1px solid rgba(212,160,23,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    flex-shrink: 0;
+  }
+
+  .review-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: 0.03em;
+  }
+
+  .review-tag {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-top: 2px;
+  }
+
+  @media (max-width: 900px) {
+    .reviews-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+
+  /* ── TIMELINE ── */
+  .timeline-section {
+    padding: 100px 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .timeline {
+    margin-top: 56px;
+    position: relative;
+    padding-left: 60px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, var(--gold), rgba(212,160,23,0.08));
+  }
+
+  .tl-item {
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .tl-dot {
+    position: absolute;
+    left: -47px; top: 5px;
+    width: 14px; height: 14px;
+    background: #000;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tl-dot::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--gold);
+    border-radius: 50%;
+  }
+
+  .tl-month {
+    font-size: 0.65rem;
+    letter-spacing: 0.28em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  .tl-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: var(--white);
+  }
+
+  .tl-desc {
+    font-size: 0.92rem;
+    line-height: 1.78;
+    color: rgba(255,255,255,0.55);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  /* ── PRICING ── */
+  .pricing {
+    padding: 100px 24px;
+    background: #060606;
+  }
+
+  .pricing-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .pricing-inner h2 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    color: var(--white);
+  }
+
+  .pricing-inner h2 em { font-style: italic; color: var(--gold-light); }
+
+  .price-card {
+    margin-top: 56px;
+    border: 1px solid rgba(212,160,23,0.4);
+    padding: 64px 48px;
+    position: relative;
+    background: linear-gradient(160deg, rgba(212,160,23,0.06), transparent);
+  }
+
+  .price-crown {
+    position: absolute;
+    top: -22px; left: 50%;
+    transform: translateX(-50%);
+    background: #060606;
+    padding: 0 18px;
+    font-size: 1.6rem;
+  }
+
+  .price-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.38em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  .price-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+
+  .price-currency {
+    font-size: 1.8rem;
+    vertical-align: top;
+    margin-top: 14px;
+    display: inline-block;
+  }
+
+  .price-note {
+    margin-top: 10px;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.38);
+    font-family: 'Lato', sans-serif;
+  }
+
+  .price-divider {
+    width: 60px; height: 1px;
+    background: rgba(212,160,23,0.3);
+    margin: 36px auto;
+  }
+
+  .price-includes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .price-includes li {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.78);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .price-includes li .check {
+    color: var(--gold);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .price-cta { margin-top: 44px; }
+
+  .urgency {
+    margin-top: 24px;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    color: rgba(212,160,23,0.6);
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  /* ── FOOTER CTA ── */
+  .footer-cta {
+    padding: 120px 24px;
+    text-align: center;
+    background: #080808;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 50% 80% at 50% 100%, rgba(212,160,23,0.09), transparent);
+  }
+
+  .footer-cta h2 {
+    font-size: clamp(2.2rem, 5.5vw, 4.2rem);
+    line-height: 1.12;
+    max-width: 680px;
+    margin: 0 auto 44px;
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+  }
+
+  .footer-cta h2 em { font-style: italic; color: var(--gold-light); }
+
+  .footer-logo {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-logo img {
+    height: 60px;
+    width: auto;
+    opacity: 0.85;
+  }
+
+  .footer-bottom {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(212,160,23,0.1);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.22);
+    font-family: 'Lato', sans-serif;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%       { transform: translateX(-50%) translateY(7px); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .about-visual { display: none; }
+    .brand-grid { grid-template-columns: 1fr; gap: 16px; }
+    .trust-inner { grid-template-columns: 1fr; }
+    .trust-item { border-right: none; border-bottom: 1px solid rgba(212,160,23,0.15); }
+    .ebook-inner { flex-direction: column; }
+    .date-item + .date-item { border-left: 1px solid var(--border); border-top: none; }
+    .capstone-card { flex-direction: column; }
+    .price-card { padding: 48px 24px; }
+  }
+
+  /* Stitch Variations Card */
+  .category-card {
+    grid-column: span 1;
+  }
+
+  .category-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gold-light);
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(212,160,23,0.2);
+  }
+
+  .stitch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .stitch-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .stitch-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .stitch-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .stitch-sub {
+    font-size: 0.8rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="honeycomb-bg"></div>
+
+  <div class="logo-wrap">
+    <svg width="52" height="65" viewBox="0 0 56 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 8 Q10 8 10 62" stroke="#D4A017" stroke-width="1.8" fill="none"/>
+      <path d="M10 8 Q36 8 36 23 Q36 38 10 38" stroke="#D4A017" stroke-width="1.8" fill="none"/>
+      <path d="M10 38 Q40 38 40 50 Q40 62 10 62" stroke="#D4A017" stroke-width="1.8" fill="none"/>
+      <path d="M15 13 Q15 13 15 57" stroke="#D4A017" stroke-width="0.9" fill="none" opacity="0.45"/>
+      <path d="M15 13 Q31 13 31 23 Q31 34 15 34" stroke="#D4A017" stroke-width="0.9" fill="none" opacity="0.45"/>
+      <path d="M15 42 Q35 42 35 50 Q35 57 15 57" stroke="#D4A017" stroke-width="0.9" fill="none" opacity="0.45"/>
+      <path d="M19 17 Q19 17 19 53" stroke="#D4A017" stroke-width="0.5" fill="none" opacity="0.25"/>
+      <path d="M19 17 Q27 17 27 23 Q27 30 19 30" stroke="#D4A017" stroke-width="0.5" fill="none" opacity="0.25"/>
+      <path d="M19 46 Q31 46 31 50 Q31 53 19 53" stroke="#D4A017" stroke-width="0.5" fill="none" opacity="0.25"/>
+    </svg>
+    <div class="logo-wordmark">
+      <span class="wm-top">The RoyalBee</span>
+      <span class="wm-bottom">Vogue</span>
+    </div>
+  </div>
+
+  <div class="badge">Enrollment Now Open · 2026 Training</div>
+
+  <h1>Master the <em>Art of Crochet</em><br>from Anywhere in the World</h1>
+
+  <p class="hero-sub">An Intensive Online Training Program · July to September 2026</p>
+
+  <div class="date-strip">
+    <div class="date-item">
+      <div class="d-label">Program Starts</div>
+      <div class="d-val">July 1, 2026</div>
+    </div>
+    <div class="date-item">
+      <div class="d-label">Duration</div>
+      <div class="d-val">3 Months</div>
+    </div>
+    <div class="date-item">
+      <div class="d-label">Program Ends</div>
+      <div class="d-val">September 30, 2026</div>
+    </div>
+    <div class="date-item">
+      <div class="d-label">Format</div>
+      <div class="d-val">100% Online</div>
+    </div>
+  </div>
+
+  <div class="cta-group">
+    <a href="https://wa.me/2348143320391?text=Hi%2C%20I%E2%80%99m%20interested%20in%20The%20RoyalBee%20Vogue%20Crochet%20Training%202026%21%20Please%20share%20more%20details." target="_blank" class="btn-primary">Reserve Your Spot</a>
+    <span class="cta-note">Limited Spaces · Enroll Before They're Gone</span>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <svg width="12" height="16" viewBox="0 0 12 16" fill="none">
+      <path d="M6 0v12M1 7l5 5 5-5" stroke="#D4A017" stroke-width="1.3"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════ TRUST BAR ══════════ -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item reveal">
+      <div class="trust-num">20+</div>
+      <div class="trust-label">Students Trained Online</div>
+    </div>
+    <div class="trust-item reveal">
+      <div class="trust-num">3</div>
+      <div class="trust-label">Months of Expert Guidance</div>
+    </div>
+    <div class="trust-item reveal">
+      <div class="trust-num">∞</div>
+      <div class="trust-label">Countries You Can Learn From</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section">
+  <div class="section-label">About the Program</div>
+  <h2>Where <em>Craft Meets</em><br>Elegance &amp; Purpose</h2>
+
+  <div class="about-grid">
+    <div class="about-body reveal">
+      <p>
+        At <strong>The RoyalBee Vogue</strong>, we believe every thread tells a story and we want yours to be extraordinary. Our intensive online crochet training was built for aspiring makers, side hustle seekers, and creative entrepreneurs ready to transform a skill into a sustainable craft business.
+      </p>
+      <p>
+        We have already guided <strong>over 20 students</strong> through our online training, each now thriving and building their own crochet brands. Our students create, sell, and style from Nigeria, the UK, Canada, and beyond because with us, geography is never a limitation.
+      </p>
+      <p>
+        This isn't just a course it's a <strong>complete creative transformation</strong>. From your very first stitch to launching your brand on social media, we walk with you every step of the journey.
+      </p>
+
+      <ul class="features-list">
+        <li>Detailed video and live instruction</li>
+        <li>Exclusive e-book and training guideline included</li>
+        <li>All materials and tools included in the fee</li>
+        <li>Brand building and social media coaching</li>
+        <li>Graded real world project at completion</li>
+        <li>Learn at your own pace, on your schedule</li>
+      </ul>
+    </div>
+
+    <div class="about-visual reveal">
+      <div class="hex-ring">
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="hex-center">
+          <div class="hex-icon">🧶</div>
+          <div class="hex-text">The RoyalBee</div>
+          <div class="hex-sub">Crochet Mastery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ CURRICULUM ══════════ -->
+<section class="curriculum">
+  <div class="curriculum-inner">
+    <div class="section-label">Course Curriculum</div>
+    <h2>Your <em>Course Outline</em></h2>
+    <p class="intro">A carefully sequenced curriculum that builds your skills from foundation to fashion. Every lesson is designed to deliver real confidence and results.</p>
+
+    <div class="modules-grid">
+
+      <div class="module-card reveal">
+        <div class="module-num">01</div>
+        <div class="module-icon">🧶</div>
+        <div class="module-title">Master Basic Crochet Stitches</div>
+        <p class="module-desc">Chain, slip stitch, single, half double, double and treble crochet. These are the foundational stitches every crocheter must master first.</p>
+      </div>
+
+      <div class="module-card reveal">
+        <div class="module-num">02</div>
+        <div class="module-icon">✂️</div>
+        <div class="module-title">Shaping Techniques</div>
+        <p class="module-desc">Learn how to shape your crochet fabric with intention. Understand row shaping, working in rounds and building structure into your pieces from the very start.</p>
+      </div>
+
+      <div class="module-card reveal">
+        <div class="module-num">03</div>
+        <div class="module-icon">🎨</div>
+        <div class="module-title">Color Changing Art</div>
+        <p class="module-desc">Unlock the magic of multi color designs. From clean color carries to bold color blocks, your work will become visually striking and expressive.</p>
+      </div>
+
+      <div class="module-card reveal">
+        <div class="module-num">04</div>
+        <div class="module-icon">🪡</div>
+        <div class="module-title">How to Increase, Decrease and Weave in as a Pro</div>
+        <p class="module-desc">Three essential skills combined in one power module. Shape your work with precision, control your stitch count and finish every piece with clean invisible thread ends.</p>
+      </div>
+
+      <div class="module-card reveal category-card">
+        <div class="module-num">05</div>
+        <div class="category-label">Stitch Variations</div>
+        <div class="stitch-list">
+          <div class="stitch-item">
+            <span class="stitch-icon">🕸️</span>
+            <div>
+              <div class="stitch-name">Mesh Stitch</div>
+              <div class="stitch-sub">Open, airy and elegant. Perfect for tops and bags with a high fashion feel.</div>
+            </div>
+          </div>
+          <div class="stitch-item">
+            <span class="stitch-icon">🟡</span>
+            <div>
+              <div class="stitch-name">Granny Square Patterns</div>
+              <div class="stitch-sub">The timeless classic reimagined for modern makers. Join motifs into stunning garments and accessories.</div>
+            </div>
+          </div>
+          <div class="stitch-item">
+            <span class="stitch-icon">🐚</span>
+            <div>
+              <div class="stitch-name">Shell Stitches</div>
+              <div class="stitch-sub">Fan shaped repeats that add texture, rhythm and luxury to any project.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module-card reveal">
+        <div class="module-num">06</div>
+        <div class="module-icon">👙</div>
+        <div class="module-title">Creation of Wearable Projects such as Bralettes, Skirts and Shorts</div>
+        <p class="module-desc">The showstopper module. You will design and construct real wearable crochet fashion pieces you can wear, gift or sell with full confidence.</p>
+      </div>
+
+    </div>
+
+    <div class="capstone-card reveal">
+      <div class="capstone-icon">🏆</div>
+      <div class="capstone-body">
+        <div class="cap-tag">Capstone · Final Module</div>
+        <h3>Your Real-World Graded Project</h3>
+        <p>Every student completes a final project evaluated by our instructors a true test of everything you've learned. This is a portfolio piece that proves your skill and marks your growth from beginner to confident crocheter. Your grade is your badge of honour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BRAND BUILDING ══════════ -->
+<section class="brand-section">
+  <div class="section-label">Bonus Module</div>
+  <h2>Build Your <em>Brand</em>,<br>Not Just Your Skills</h2>
+  <p class="intro">We don't just teach you to crochet. We teach you to turn your craft into income. Our brand-building module is included in every enrollment.</p>
+
+  <div class="brand-grid">
+    <div class="brand-card reveal">
+      <div class="b-icon">📱</div>
+      <h4>Social Media Setup</h4>
+      <p>Build a compelling presence on Instagram, TikTok, and Facebook. Learn what to post, when to post and how to attract customers organically.</p>
+    </div>
+    <div class="brand-card reveal">
+      <div class="b-icon">📸</div>
+      <h4>Product Photography</h4>
+      <p>Simple techniques to make your crochet pieces look irresistible online no expensive equipment needed. Just your phone and great lighting.</p>
+    </div>
+    <div class="brand-card reveal">
+      <div class="b-icon">💰</div>
+      <h4>Pricing &amp; Selling</h4>
+      <p>Learn to price your work with confidence, find your first customers, and build a loyal community around your crochet brand.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EBOOK ══════════ -->
+<div class="ebook-strip">
+  <div class="ebook-inner">
+    <div class="ebook-visual reveal">
+      <div class="e-icon">📖</div>
+      <div class="e-tag">Exclusive</div>
+      <div class="e-title">The RoyalBee Vogue Crochet Guide</div>
+    </div>
+    <div class="ebook-body reveal">
+      <h3>Your Personal<br>E-Book &amp; Guideline</h3>
+      <p>Every enrolled student receives an exclusive digital study guide — your personal crochet bible for the entire program. Packed with visual references, stitch charts, pattern guides, tool breakdowns and step-by-step instructions, it is sent directly to you upon enrollment and is yours to keep forever.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ ONLINE ══════════ -->
+<section class="online-section">
+  <div class="section-label">Why Online Works</div>
+  <h2>Learn From <em>Anywhere.</em><br>Create From <em>Everywhere.</em></h2>
+
+  <div class="globe-ring reveal">
+    <div class="ping" style="top:30px;left:50%;"></div>
+    <div class="ping" style="bottom:50px;right:40px;"></div>
+    <div class="ping" style="top:50%;left:20px;"></div>
+    <div class="ping" style="bottom:80px;left:60px;"></div>
+    <div class="globe-inner">
+      <div class="globe-emoji">🌍</div>
+    </div>
+  </div>
+
+  <ul class="online-points">
+    <li><span class="dot"></span>Join from Nigeria, the UK, Canada, the US, or anywhere in the world</li>
+    <li><span class="dot"></span>Learn at your own pace with no rigid timetables</li>
+    <li><span class="dot"></span>Access lessons from your phone, tablet, or laptop</li>
+    <li><span class="dot"></span>Over 20 graduates already thriving in their own crochet businesses</li>
+    <li><span class="dot"></span>Ongoing support from instructors all through the training</li>
+    <li><span class="dot"></span>A global community of makers who lift each other up</li>
+  </ul>
+</section>
+
+<!-- ══════════ REVIEWS ══════════ -->
+<section class="reviews-section">
+  <div class="reviews-inner">
+    <div class="section-label">Student Reviews</div>
+    <h2>Words From Our <em>Graduates</em></h2>
+
+    <div class="reviews-grid">
+
+      <div class="review-card reveal">
+        <div class="review-quote-mark">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Training with RoyalBee Vogue was well detailed to an extent. Communication was top tier. She made sure to teach us what efficiency means, especially when it comes to completing projects on time, which will definitely help in the long run. ❤️</p>
+        <div class="review-footer">
+          <div class="review-avatar">P</div>
+          <div>
+            <div class="review-name">Praise</div>
+            <div class="review-tag">RoyalBee Vogue Graduate</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-quote-mark">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Learning crochet at The RoyalBee Vogue is one of the best decisions I've made in a while. The experience was amazing. The tutor really gave her best in pouring her knowledge into us, and I'm sure that made us learn fast without much struggle. Even years after learning from her, I still go back whenever I'm unsure of something, and she always replies really well. I'll definitely recommend the class over and over to anyone who's interested.</p>
+        <div class="review-footer">
+          <div class="review-avatar">I</div>
+          <div>
+            <div class="review-name">Iyanuoluwa</div>
+            <div class="review-tag">RoyalBee Vogue Graduate</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <div class="review-quote-mark">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">The training session was not only informative but also inspiring. It showed me that crocheting is a valuable skill that requires creativity, patience, and consistency.</p>
+        <div class="review-footer">
+          <div class="review-avatar">T</div>
+          <div>
+            <div class="review-name">Titilayo</div>
+            <div class="review-tag">RoyalBee Vogue Graduate</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TIMELINE ══════════ -->
+<section class="timeline-section">
+  <div class="section-label">Program Timeline</div>
+  <h2>Your Journey,<br><em>Month by Month</em></h2>
+
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-month">July 2026 · Month One</div>
+      <div class="tl-title">Foundation and Fundamentals</div>
+      <p class="tl-desc">Master the essential stitches, learn to increase and decrease, and understand your yarn, hooks and tools. You build a solid foundation and receive your e-book and materials.</p>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-month">August 2026 · Month Two</div>
+      <div class="tl-title">Patterns, Textures and Techniques</div>
+      <p class="tl-desc">Dive into mesh stitch, granny patterns, shell stitches, and color changes. Your projects grow more complex and your creative voice starts to emerge.</p>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-month">September 2026 · Month Three</div>
+      <div class="tl-title">Fashion, Final Project and Brand Launch</div>
+      <p class="tl-desc">Create crochet tops, skirts, and shorts. Complete and submit your graded final project, finish your brand building training and graduate as a certified RoyalBee Vogue maker ready to sell, create and shine.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRICING ══════════ -->
+<section class="pricing" id="pricing">
+  <div class="pricing-inner">
+    <div class="section-label" style="justify-content:center;">Investment</div>
+    <h2>One Fee.<br><em>Everything Included.</em></h2>
+
+    <div class="price-card reveal">
+      <div class="price-crown">👑</div>
+      <div class="price-label">Training Investment</div>
+      <div class="price-amount">
+        <span class="price-currency">₦</span>100,000
+      </div>
+      <div class="price-note">One-time enrollment · All-inclusive</div>
+
+      <div class="price-divider"></div>
+
+      <ul class="price-includes">
+        <li><span class="check">◆</span>Full 3 month intensive crochet training</li>
+        <li><span class="check">◆</span>All physical materials and crochet tools delivered to you</li>
+        <li><span class="check">◆</span>Exclusive RoyalBee Vogue e-book and training guideline</li>
+        <li><span class="check">◆</span>Nine complete curriculum modules</li>
+        <li><span class="check">◆</span>Crochet tops, skirts and shorts project training</li>
+        <li><span class="check">◆</span>Brand and social media setup coaching</li>
+        <li><span class="check">◆</span>Graded final project with instructor feedback</li>
+        <li><span class="check">◆</span>Instructor support all through the training</li>
+        <li><span class="check">◆</span>Access from anywhere in the world</li>
+      </ul>
+
+      <div class="price-cta">
+        <a href="https://wa.me/2348143320391?text=Hi%2C%20I%E2%80%99m%20interested%20in%20The%20RoyalBee%20Vogue%20Crochet%20Training%202026%21%20Please%20share%20more%20details." target="_blank" class="btn-primary">Enroll Now Secure Your Spot</a>
+      </div>
+
+      <p class="urgency">⬡ Limited Spaces Available Training Closes When Full ⬡</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER CTA ══════════ -->
+<section class="footer-cta">
+  <div class="footer-logo" style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:40px;position:relative;z-index:1;">
+    <svg width="40" height="50" viewBox="0 0 56 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 8 Q10 8 10 62" stroke="#D4A017" stroke-width="1.8" fill="none"/>
+      <path d="M10 8 Q36 8 36 23 Q36 38 10 38" stroke="#D4A017" stroke-width="1.8" fill="none"/>
+      <path d="M10 38 Q40 38 40 50 Q40 62 10 62" stroke="#D4A017" stroke-width="1.8" fill="none"/>
+      <path d="M15 13 Q15 13 15 57" stroke="#D4A017" stroke-width="0.9" fill="none" opacity="0.45"/>
+      <path d="M15 13 Q31 13 31 23 Q31 34 15 34" stroke="#D4A017" stroke-width="0.9" fill="none" opacity="0.45"/>
+      <path d="M15 42 Q35 42 35 50 Q35 57 15 57" stroke="#D4A017" stroke-width="0.9" fill="none" opacity="0.45"/>
+    </svg>
+    <div style="text-align:left;line-height:1.2;">
+      <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;letter-spacing:0.06em;color:#fff;">The RoyalBee</div>
+      <div style="font-family:'Lato',sans-serif;font-weight:300;font-size:0.65rem;letter-spacing:0.42em;color:#D4A017;text-transform:uppercase;margin-top:3px;">Vogue</div>
+    </div>
+  </div>
+  <h2>Your Crochet Journey<br>Starts <em>July 1st.</em><br>Will You Be Ready?</h2>
+  <a href="https://wa.me/2348143320391?text=Hi%2C%20I%E2%80%99m%20interested%20in%20The%20RoyalBee%20Vogue%20Crochet%20Training%202026%21%20Please%20share%20more%20details." target="_blank" class="btn-primary" style="position:relative;z-index:1;">Join the 2026 Training</a>
+
+  <div class="footer-bottom">
+    © 2026 The RoyalBee Vogue. All Rights Reserved. Empowering Makers Worldwide.
+  </div>
+</section>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+
+
+
+
+</script>
+</body>
+</html>
