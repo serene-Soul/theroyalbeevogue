@@ -1132,6 +1132,63 @@
     .date-item + .date-item { border-left: 1px solid var(--border); border-top: none; }
     .capstone-card { flex-direction: column; }
     .price-card { padding: 48px 24px; }
+
+    /* ── Badge: keep on one line on mobile ── */
+    .badge {
+      white-space: nowrap;
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      padding: 5px 12px;
+    }
+
+    /* ── Input fields: 16px prevents iOS auto-zoom ── */
+    .mf-input {
+      font-size: 16px;
+    }
+
+    /* ── Hero: tighten padding so everything breathes ── */
+    .hero {
+      padding: 60px 16px 80px;
+    }
+
+    /* ── Date strip: stack as 2×2 grid on small screens ── */
+    .date-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      width: 100%;
+    }
+    .date-item {
+      padding: 14px 12px;
+    }
+    .date-item + .date-item {
+      border-left: none;
+      border-top: none;
+    }
+    /* restore inner borders for 2-column grid */
+    .date-item:nth-child(2) { border-left: 1px solid var(--border); }
+    .date-item:nth-child(3) { border-top: 1px solid var(--border); }
+    .date-item:nth-child(4) { border-left: 1px solid var(--border); border-top: 1px solid var(--border); }
+
+    /* ── CTA button: full-width on mobile ── */
+    .btn-primary {
+      width: 100%;
+      text-align: center;
+      padding: 18px 24px;
+    }
+
+    /* ── Trust numbers: slightly smaller on mobile ── */
+    .trust-num { font-size: 2.8rem; }
+
+    /* ── Section padding ── */
+    .section { padding: 64px 16px; }
+    .curriculum { padding: 64px 16px; }
+    .brand-section { padding: 64px 16px; }
+    .ebook-strip { padding: 56px 16px; }
+    .online-section { padding: 64px 16px; }
+    .reviews-section { padding: 64px 16px; }
+    .timeline-section { padding: 64px 16px; }
+    .pricing { padding: 64px 16px; }
   }
 
   /* Stitch Variations Card */
@@ -2228,6 +2285,8 @@
   .modal-title  { font-size: 1.4rem; }
   .mf-row       { grid-template-columns: 1fr; }
   .mf-radio-group { flex-direction: column; }
+  /* 16px prevents iOS Safari from auto-zooming on input focus */
+  .mf-input     { font-size: 16px; }
 }
 </style>
 
